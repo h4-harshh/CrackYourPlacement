@@ -3,20 +3,17 @@ public:
     vector<int> findDuplicates(vector<int>& nums) {
         
         vector<int>result;
-
-        int size=nums.size();
-        vector<int>freq(size,0);
-
         for(int i=0;i<nums.size();i++)
         {
-            freq[nums[i]-1]++;
-        }
+            int num=abs(nums[i]);
+            int idx=num-1;
 
-        for(int i=0;i<freq.size();i++)
-        {
-            if(freq[i]>1)
+            if(nums[idx]<0)
             {
-                result.push_back(i+1);
+                result.push_back(idx+1);
+            }
+            else{
+                nums[idx]*=-1;
             }
         }
         return result;
