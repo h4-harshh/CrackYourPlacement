@@ -10,20 +10,23 @@
 4.remove-duplicates-from-sorted-list 83
         https://leetcode.com/problems/remove-duplicates-from-sorted-list/submissions/1326306213
 
-5.remove-linked-list-elements/submissions 203
+5.Sort a linked list of 0s, 1s and 2s GFG
+        https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/
+
+6.remove-linked-list-elements/submissions 203
         https://leetcode.com/problems/remove-linked-list-elements/submissions/1326330385
 
-6.merge-two-sorted-lists/description 21
+7.merge-two-sorted-lists/description 21
         https://leetcode.com/problems/merge-two-sorted-lists/submissions/1326442492
 
-7.multiply two linked list GFG
+8.multiply two linked list GFG
         https://www.geeksforgeeks.org/problems/multiply-two-linked-lists/1
 
-8.intersection-of-two-linked-lists/submissions 160
+9.intersection-of-two-linked-lists/submissions 160
         https://leetcode.com/problems/intersection-of-two-linked-lists/submissions/1326456818
 
-9.reverse-linked-list 206
+12.reverse-linked-list 206
         https://leetcode.com/problems/reverse-linked-list/submissions/1328750052
 
-10.remove-nth-node-from-end-of-list/submissions 19
+18.remove-nth-node-from-end-of-list/submissions 19
         https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/1328776474
