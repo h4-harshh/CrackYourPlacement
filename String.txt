@@ -1,0 +1,24 @@
+1.Valid Parenthesis 20
+    https://leetcode.com/problems/valid-parentheses/submissions/1326204823
+
+2.print-all-the-duplicates-in-the-input-string
+	https://www.geeksforgeeks.org/print-all-the-duplicates-in-the-input-string/
+
+3.find-the-index-of-the-first-occurrence-in-a-string/submissions 28
+    https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1326214412
+
+4.longest-common-prefix 14
+    https://leetcode.com/problems/longest-common-prefix/submissions/1326227665
+
+5.valid-palindrome-ii 680
+    https://leetcode.com/problems/valid-palindrome-ii/submissions/1326256407
+
+8.problems/simplify-path 71
+	stack->https://leetcode.com/problems/simplify-path/submissions/1328156385
+	vector->https://leetcode.com/problems/simplify-path/submissions/1328160467
+
+9.roblems/minimum-window-substring 76
+	https://leetcode.com/problems/minimum-window-substring/submissions/1328399421
+
+
+
