@@ -1,3 +1,7 @@
 1.maximal-rectangle 85
   https://leetcode.com/problems/maximal-rectangle/submissions/1331380801
+
+2.number-of-islands 200
+  DFS->https://leetcode.com/problems/number-of-islands/submissions/1332139225
+  BFS->https://leetcode.com/problems/number-of-islands/submissions/1332146296
         
