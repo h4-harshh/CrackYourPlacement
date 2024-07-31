@@ -10,6 +10,7 @@
  */
 class Solution {
 public:
+    // Approach 1
     ListNode* reverseList(ListNode* head) {
         if(head==nullptr || head->next==nullptr) return head;
 
