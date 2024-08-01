@@ -10,45 +10,44 @@
  */
 class Solution {
 public:
-    //approach 1 by reversing linekd list
-    
-    ListNode *reverse(ListNode *head)
-    {
-        if(!head) return head;
+    //approach 2 using stack
 
-        ListNode *curr=head;
-        ListNode *prev=nullptr;
-        while(curr)
-        {
-            ListNode *next=curr->next;
-            curr->next=prev;
-            prev=curr;
-            curr=next;
-        }
-        return prev;
-    }
+
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
 
         if(!l1) return l2;
         if(!l2) return l1; 
-        l1=reverse(l1);
-        l2=reverse(l2);
+        stack<ListNode *>st1;
+        stack<ListNode *>st2;
+
+        ListNode *curr=l1;
+        while(curr)
+        {
+            st1.push(curr);
+            curr=curr->next;
+        }
+        curr=l2;
+        while(curr)
+        {
+            st2.push(curr);
+            curr=curr->next;
+        }
 
         ListNode *result=new ListNode(0);
         
         int carry=0;
         int sum=0;
-        while(l1 || l2)
+        while(!st1.empty() || !st2.empty())
         {
-            if(l1!=nullptr)
+            if(!st1.empty())
             {
-               sum+=l1->val;
-               l1=l1->next;
+               sum+=st1.top()->val;
+               st1.pop();
             }
-            if(l2!=nullptr)
+            if(!st2.empty())
             {
-               sum+=l2->val;
-               l2=l2->next;
+               sum+=st2.top()->val;
+               st2.pop();
             }
 
             result->val=sum%10;
