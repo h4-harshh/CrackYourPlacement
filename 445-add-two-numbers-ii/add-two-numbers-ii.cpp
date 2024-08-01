@@ -10,6 +10,8 @@
  */
 class Solution {
 public:
+    //approach 1 by reversing linekd list
+    
     ListNode *reverse(ListNode *head)
     {
         if(!head) return head;
