@@ -1,34 +1,33 @@
-//approach 1:using 2 queue
+//approach 2:using 2 queue
 class MyStack {
 public:
-    queue<int>q1;
-    queue<int>q2;
+    queue<int>que;
     MyStack() {
         
     }
     
     void push(int x) {
-        q2.push(x);
-        while(!q1.empty())
+        que.push(x);
+        for(int i=0;i<(que.size()-1);i++)
         {
-            q2.push(q1.front());
-            q1.pop();
+            int temp=que.front();
+            que.pop();
+            que.push(temp);
         }
-        swap(q1,q2);
     }
     
     int pop() {
-        int result=q1.front();
-        q1.pop();
+        int result=que.front();
+        que.pop();
         return result;
     }
     
     int top() {
-        return q1.front();
+        return que.front();
     }
     
     bool empty() {
-        return q1.empty();
+        return que.empty();
     }
 };
 
