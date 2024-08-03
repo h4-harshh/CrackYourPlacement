@@ -1,28 +1,11 @@
 class Solution {
 public:
-    int evaluate(int a, int b, string op)
-{
-    if (op == "+") 
-    {
-        return a + b;
-    } 
-    else if (op == "-") 
-    {
-        return a - b;
-    } 
-    else if (op == "*") 
-    {
-        return a * b;
-    } 
-    else if (op == "/") 
-    {
-        return a / b;
-    } 
-    else 
-    {
-        return -1; // Default case for unknown operations
-    }
-}
+    unordered_map<string,function<int (int,int)>>mp={
+        {"+",[](int a,int b) {return a+b;}},
+        {"-",[](int a,int b) {return a-b;}},
+        {"*",[](int a,int b) {return a*b;}},
+        {"/",[](int a,int b) {return a/b;}}
+    };
     int evalRPN(vector<string>& tokens) {
         stack<int>st;
         for(int i=0;i<tokens.size();i++)
@@ -33,7 +16,7 @@ public:
                 st.pop();
                 int a=st.top();
                 st.pop();
-                int temp=evaluate(a,b,tokens[i]);
+                int temp=mp[tokens[i]](a,b);
                 st.push(temp);
                 continue;
             }
