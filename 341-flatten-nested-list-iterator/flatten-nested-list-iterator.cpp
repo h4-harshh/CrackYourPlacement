@@ -18,41 +18,36 @@
 
 class NestedIterator {
 public:
-    //Approach 2
-    stack<NestedInteger*>st;
-    NestedIterator(vector<NestedInteger> &nestedList) {
-        for(int i=nestedList.size()-1;i>=0;i--)
+    queue<int>que;
+    void flatten(vector<NestedInteger> &nestedList)
+    {
+        int n=nestedList.size();
+
+        for(int i=0;i<nestedList.size();i++)
         {
-            st.push(&nestedList[i]);
+            NestedInteger &obj=nestedList[i];
+
+            if(obj.isInteger())
+            {
+                que.push(obj.getInteger());
+            }
+            else{
+                flatten(obj.getList());
+            }
         }
+    }
+    NestedIterator(vector<NestedInteger> &nestedList) {
+        flatten(nestedList);
     }
     
     int next() {
-        int num=st.top()->getInteger();
-        st.pop();
-
-        return num;
+        int temp=que.front();
+        que.pop();
+        return temp;
     }
     
     bool hasNext() {
-        if(st.empty())
-            return false;
-        
-        while(!st.empty())
-        {
-            NestedInteger* curr=st.top();
-
-            if(curr->isInteger())
-                return true;
-            
-            st.pop();
-            vector<NestedInteger>&vec=curr->getList();
-            for(int i=vec.size()-1;i>=0;i--)
-            {
-                st.push(&vec[i]);
-            }
-        }
-        return false;
+        return !que.empty();
     }
 };
 
