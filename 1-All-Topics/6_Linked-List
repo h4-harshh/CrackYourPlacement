@@ -39,3 +39,25 @@
 0.add-two-numbers-ii 445
         reversing ll->https://leetcode.com/problems/add-two-numbers-ii/submissions/1341069737
         using stack->https://leetcode.com/problems/add-two-numbers-ii/submissions/1341079173
+
+
+
+0.copy-list-with-random-pointer 138
+        copying map->https://leetcode.com/problems/copy-list-with-random-pointer/submissions/1341144167
+        without->https://leetcode.com/problems/copy-list-with-random-pointer/submissions/1341154485
+
+0.sort-list 148
+	   approach 1->https://leetcode.com/problems/sort-list/submissions/1341762608
+		Approach 2->https://leetcode.com/problems/sort-list/submissions/1342400075
+
+-.odd-even-linked-list 328
+		https://leetcode.com/problems/odd-even-linked-list/submissions/1342446330
+
+-.reverse-nodes-in-k-group 28
+		https://leetcode.com/problems/reverse-nodes-in-k-group/submissions/1343336825
+
+-.remove-nodes-from-linked-list 2487
+	stack->https://leetcode.com/problems/remove-nodes-from-linked-list/submissions/1344280522
+	recursion->https://leetcode.com/problems/remove-nodes-from-linked-list/submissions/1344287755
+	reverse->https://leetcode.com/problems/remove-nodes-from-linked-list/submissions/1344413814
+ 
